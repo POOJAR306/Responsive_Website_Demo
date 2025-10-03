@@ -2,27 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vanilla JS To‑Do App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Website Demo</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="app">
-    <h1>To‑Do List</h1>
+  <header class="header">
+    <h1 class="logo">My Website</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <form id="todo-form" class="input-area" autocomplete="off">
-      <input id="todo-input" type="text" placeholder="Add a new task..." />
-      <button id="add-btn" type="submit">Add</button>
-    </form>
+  <main class="content">
+    <section class="intro">
+      <h2>Welcome</h2>
+      <p>This is a demo of making a desktop-first page mobile-friendly using CSS media queries.</p>
+    </section>
 
-    <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+    <section class="columns">
+      <div class="column">
+        <h3>Column 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="column">
+        <h3>Column 2</h3>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="column">
+        <h3>Column 3</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+      </div>
+    </section>
 
-    <div class="footer">
-      <span id="count">0 tasks</span>
-      <button id="clear-completed">Clear completed</button>
-    </div>
+    <section class="image-section">
+      <h2>Responsive Image</h2>
+      <img src="mobile.jpg" alt="Sample" />
+    </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer class="footer">
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
 </body>
 </html>
